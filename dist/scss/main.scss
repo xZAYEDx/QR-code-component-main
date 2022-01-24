@@ -1,0 +1,68 @@
+    @import 'config';
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+    //function 
+    @function weigth($weigth-name) {
+        @return map-get($font-weights,
+        $weigth-name);
+    }
+    
+    main {
+        .card {
+            transition: 0.3s;
+            max-width: 290px;
+            max-height: 500vh;
+            background-color: $White;
+            display: flex;
+            flex-direction: column;
+            padding: 2.9rem 1rem;
+            margin: 4.5rem auto;
+            border-radius: 15px;
+            outline: none;
+            box-shadow: 0 4px 8px 0 rgba(123, 135, 157, 0.2);
+            img {
+                max-width: 290px;
+                border-radius: 15px;
+                outline: none;
+                margin-top: -30px;
+            }
+            .content {
+                display: inline-block;
+                text-align: center;
+                margin-top: 1.5rem;
+                h3 {
+                    font-weight: weight(bold);
+                    color: $DarkBlue;
+                }
+                p {
+                    font-weight: weight(regular);
+                    font-size: 0.9rem;
+                    margin-top: 1.1rem;
+                    color: $GrayishBlue;
+                }
+            }
+            &:hover {
+                box-shadow: 0 8px 16px 0 rgba(123, 135, 157, 0.2);
+            }
+        }
+    }
+    /*****************************************/
+    
+    //      FOOTER 
+    footer {
+        position: fixed;
+        position: absolute;
+        bottom: -3.5rem;
+        left: 1rem;
+        right: 1rem;
+        text-align: center;
+        padding: 0.5rem;
+        margin-top: 40rem;
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+            font-size: 11px;
+        }
+    }
