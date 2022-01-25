@@ -69,16 +69,19 @@
     }
     
     @media (min-width: 1200px) {
+        body {
+            overflow: hidden;
+        }
         main {
             .card {
-                margin: 9.5rem auto 0 auto;
+                margin: 9.8rem auto 0 auto;
                 align-items: center;
                 justify-content: center;
                 max-width: 320px;
             }
         }
         footer {
-            margin-bottom: -4.0rem;
+            margin-bottom: -6rem;
             bottom: 0.4rem;
         }
     }
