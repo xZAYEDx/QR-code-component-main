@@ -18,7 +18,7 @@
             margin: 4.5rem auto;
             border-radius: 15px;
             outline: none;
-            box-shadow: 0 4px 8px 0 rgba(123, 135, 157, 0.2);
+            box-shadow: 0 8px 16px 0 rgba(123, 135, 157, 0.2);
             img {
                 max-width: 290px;
                 border-radius: 15px;
@@ -42,7 +42,7 @@
                 }
             }
             &:hover {
-                box-shadow: 0 8px 16px 0 rgba(123, 135, 157, 0.2);
+                box-shadow: 0 16px 32px 0 rgba(123, 135, 157, 0.2);
             }
         }
     }
@@ -71,15 +71,14 @@
     @media (min-width: 1200px) {
         main {
             .card {
-                margin: 9rem auto;
-                margin-top: 9.5rem;
+                margin: 9.5rem auto 0 auto;
                 align-items: center;
                 justify-content: center;
                 max-width: 320px;
             }
         }
         footer {
-            margin-bottom: -4.5rem;
+            margin-bottom: -4.0rem;
             bottom: 0.4rem;
         }
     }
