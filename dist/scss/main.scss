@@ -9,10 +9,12 @@
     main {
         .card {
             transition: 0.3s;
-            max-width: 290px;
+            max-width: 320px;
             max-height: 500vh;
             background-color: $White;
             display: flex;
+            align-items: center;
+            justify-content: center;
             flex-direction: column;
             padding: 2.9rem 1rem;
             margin: 4.5rem auto;
@@ -50,14 +52,6 @@
     
     //      FOOTER 
     footer {
-        position: fixed;
-        position: absolute;
-        bottom: -3.5rem;
-        left: 1rem;
-        right: 1rem;
-        text-align: center;
-        padding: 0.5rem;
-        margin-top: 40rem;
         .attribution {
             font-size: 11px;
             text-align: center;
@@ -65,22 +59,5 @@
         .attribution a {
             color: hsl(228, 45%, 44%);
             font-size: 11px;
-        }
-    }
-    
-    @media (min-width: 1200px) {
-        body {
-            overflow: hidden;
-        }
-        main {
-            .card {
-                margin: 10.5rem auto 0 auto;
-                align-items: center;
-                justify-content: center;
-                max-width: 320px;
-            }
-        }
-        footer {
-            margin-bottom: -4rem;
         }
     }
