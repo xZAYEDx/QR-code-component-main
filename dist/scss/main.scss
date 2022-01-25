@@ -29,9 +29,10 @@
                 display: inline-block;
                 text-align: center;
                 margin-top: 1.5rem;
-                h3 {
+                h1 {
                     font-weight: weight(bold);
                     color: $DarkBlue;
+                    font-size: 1.3rem;
                 }
                 p {
                     font-weight: weight(regular);
@@ -64,5 +65,20 @@
         .attribution a {
             color: hsl(228, 45%, 44%);
             font-size: 11px;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        main {
+            .card {
+                margin: 9rem auto;
+                align-items: center;
+                justify-content: center;
+                max-width: 320px;
+            }
+        }
+        footer {
+            margin-bottom: -4.5rem;
+            bottom: 0.4rem;
         }
     }
